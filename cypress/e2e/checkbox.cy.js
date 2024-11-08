@@ -14,7 +14,7 @@ describe('Checkbox', () => {
             .click()
     })
 
-    it.only('Deve marcar todas as opções', () => {
+    it('Deve marcar todas as opções', () => {
         cy.goTo('/checkbox', 'Checkbox')
 
         const languages = ['javascript', 'python', 'rust', 'go', 'typescript']

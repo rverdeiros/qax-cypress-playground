@@ -42,5 +42,13 @@ describe('Tables', () => {
             .should('contain', name)
     })
 
+    it('Deve validar o link que abre o instagram em outra aba', ()=> {
+        const id = 'instapapito'
+
+        cy.contains('table tbody tr', id)        
+            .contains('a', 'Visitar')
+            .should('have.attr', 'href', 'https://instagram.com/instapapito')
+            .and('have.attr', 'target', '_blank')
+    })
 })
 

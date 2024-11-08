@@ -7,6 +7,7 @@ module.exports = defineConfig({
     },
     baseUrl: 'https://playground.cyskills.com.br',
     viewportWidth: 1920,
-    viewportHeight: 1080
+    viewportHeight: 1080,
+    video: true
   },
 });
